@@ -4,9 +4,18 @@
 <meta charset="utf-8">
 <title>Inwt233
 </title>
+<style type="text/css">
+body {
+    background-color:rgb(255, 255, 255);
+}
+p {
+    color:rgb(0, 0, 0)
+}
+</style>
 </head>
 <body>
  
+<!-- 标题 & 段落 -->
 <h1> 这是第一级标题 </h1>
 <h2> 这是第二级标题 </h2>
 <h3> 这是第三级标题 </h3>
@@ -14,21 +23,26 @@
 <p> 这是一个段落 </p>
 <hr> <!-- 水平线 -->
 <p> 这是另一个段落 </p>
-<a href="#section1">跳转到提示部分</a>
-
-
-<p><a href="https://inwt233.cn"> 这是一个指向万维网上页面的链接 </a></p>
-<p><a href="https://inwt233.cn" target="_blank"> 这是一个在新窗口打开的链接 </a></p>
-<p><a href="\index.html" title="悬停显示"> 这是一个指向本地文件的链接 </a></p>
-<a href="https://www.baidu.com" style="color: red;">红色链接</a>
-
-
-<br> <!-- 换行符 -->
-<img src="image/example.jpg" width ="100" height="100" alt="示例图片"> 
-<!-- 图片无法显示时显示alt中替代文本内容 -->
-<br>
 <abbr title="可以显示额外提示信息">鼠标悬停</abbr>
 <br>
+<a href="#section1">跳转到提示部分</a>
+
+<!-- 链接 -->
+<p><a href="https://inwt233.cn"> 这是一个指向万维网上页面的链接 </a></p>
+<p><a href="https://inwt233.cn" target="_blank"> 这是一个在新窗口打开的链接 </a></p>
+<p><a href="\index.html" title="跳转回目录"> 这是一个指向本地文件的链接 </a></p>
+<a href="https://www.baidu.com" style="color: red;">红色链接</a>
+
+<br> <!-- 换行符 -->
+
+<!-- 图像 -->
+<img src="image/example.jpg" width ="100" height="100" alt="示例图片">
+<img src="image/nonexistent.jpg" alt="图片无法显示时的替代文本" width="100" height="100">
+<img src="https://i1.hdslb.com/bfs/archive/3c69338412085f57d8bce995f6c137d715d70669.jpg" alt="Furina" width="300" height="225">
+<!-- 图片无法显示时显示alt中替代文本内容 -->
+<br>
+
+<!-- 文本框 & 按钮 & 复选框 -->
 <input type="text" placeholder="请输入文本">
 <input type="text" disabled placeholder="不可编辑文本">
 <input type="text" value="默认文本">
@@ -38,6 +52,7 @@
 <input type="checkbox" checked > 勾勾叉叉
 <br>
 
+<!-- 字体格式 -->
 <b>加粗文本</b><br>
 <i>斜体文本</i><br>
 <small> 小号字 </small><br>
@@ -47,11 +62,88 @@
 这是 <sub> 下标</sub> ， <sup> 上标</sup>， <ins> 插入 </ins> 和 <del> 删除 </del> 的示例。<br>
 <mark>高亮文本</mark><br>
 
+<!-- CSS操作 -->
+<h1 style="font-family:verdana;color:blue;background-color: greenyellow;">这是一个蓝色的标题</h1>
+<!-- font-family为字体，color为颜色，font-size为字体大小，background-color为背景颜色 -->
+<p style="color:rgb(179, 0, 255);margin-left:20px;font-size:15px">这是一个紫色的段落。</p>
+<p style="text-align:center;">这是一个居中对齐的段落。</p>
+
+
+<!-- 页面操作 -->
 <div id="section1">这里是提示部分</div>
 <a href="#">跳转到页面顶部</a>
 <a href="">刷新当前页面</a>
 <a href="about:blank">打开空白页面</a>
 
+<!-- 表格 -->
+<h4>一列:</h4>
+<table border="1">
+  <tr>
+    <td>1,1</td>
+  </tr>
+</table>
+ 
+<h4>一行三列:</h4>
+<table border="2">
+  <tr>
+    <td>1,1</td>
+    <td>1,2</td>
+    <td>1,3</td>
+  </tr>
+</table>
+ 
+<h4>两行三列:</h4>
+<table border="3">
+  <tr>
+    <td>1,1</td>
+    <td>1,2</td>
+    <td>1,3</td>
+  </tr>
+  <tr>
+    <td>2,1</td>
+    <td>2,2</td>
+    <td>2,3</td>
+  </tr>
+</table>
+
+<h4>含有表头</h4>
+<table border="4">
+  <thead>
+    <tr>
+      <th>列标题1</th>
+      <th>列标题2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1,1</td>
+      <td>1,2</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<!-- 无序列表 -->
+<ul>
+<li>Coffee</li>
+<li>Milk</li>
+</ul>
+
+<!-- 有序列表 -->
+<ol>
+<li>Tea</li>
+<li>Cola</li>
+</ol>
+
+<!-- 自定义列表 -->
+<dl>
+<dt>于竞凯</dt>
+<dd>- 笔名风夏，字岚隐，缄默的观察者，偶发的创新者，忠贞的欢愉崇拜者，自怜孤影的探寻之人。</dd>
+<dt>刘昕雨</dt>
+<dd>- 内心温柔敏感脆弱害羞内敛可爱善良小女生</dd>
+</dl>
+
+<p><a href="\html_layouts.html"> html布局示例 </a></p>
 
 </body>
 </html>
