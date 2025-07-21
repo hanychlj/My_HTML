@@ -42,16 +42,6 @@ p {
 <!-- 图片无法显示时显示alt中替代文本内容 -->
 <br>
 
-<!-- 文本框 & 按钮 & 复选框 -->
-<input type="text" placeholder="请输入文本">
-<input type="text" disabled placeholder="不可编辑文本">
-<input type="text" value="默认文本">
-<input type="button" value="点击我">
-<input type="button" disabled value="不可点击按钮">
-<br>
-<input type="checkbox" checked > 勾勾叉叉
-<br>
-
 <!-- 字体格式 -->
 <b>加粗文本</b><br>
 <i>斜体文本</i><br>
@@ -137,13 +127,76 @@ p {
 
 <!-- 自定义列表 -->
 <dl>
-<dt>于竞凯</dt>
+<dt>预警铠</dt><!--预警铠说他不要用真名-->
 <dd>- 笔名风夏，字岚隐，缄默的观察者，偶发的创新者，忠贞的欢愉崇拜者，自怜孤影的探寻之人。</dd>
 <dt>刘昕雨</dt>
 <dd>- 内心温柔敏感脆弱害羞内敛可爱善良小女生</dd>
 </dl>
 
 <p><a href="\html_layouts.html"> html布局示例 </a></p>
+
+<!-- 表单 -->
+<form action="/" method="post">
+    <!-- 文本输入框 -->
+    <label for="name">用户名:</label>
+    <input type="text" id="name" name="name" required placeholder="请输入用户名">
+
+    <br>
+
+    <!-- 密码输入框 -->
+    <label for="password">密码:</label>
+    <input type="password" id="password" name="password" required>
+
+    <br>
+
+    <!-- 单选按钮 -->
+    <label>性别:</label>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">男</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">女</label>
+    <!-- name 属性用于标识单选按钮组，同一个name属性的单选按钮互相排斥 -->
+
+    <br>
+
+    <!-- 复选框 -->
+    <input type="checkbox" id="subscribe" name="subscribe" checked>
+    <label for="subscribe">订阅推送信息</label>
+
+    <br>
+
+    <!-- 下拉列表 -->
+    <label for="country">国家:</label>
+    <select id="country" name="country">
+        <option value="cn">CN</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+
+    <br>
+
+    <!-- 提交按钮 -->
+    <input type="submit" value="提交" formaction="success.html">
+    
+    <!-- 重置按钮 -->
+    <input type="reset" value="重置">
+
+    <input type="button" value="点击" onclick="alert('按钮被点击!')">
+
+    
+</form>
+<br>
+
+<!-- HTML框架 -->
+<iframe src="default.html" width="500" height="150" name="iframe_a" frameborder="1"></iframe>
+<!-- frameborder属性用于设置框架的边框 -->
+<p><a href="\index.html" target="iframe_a">点击这个会在上面的框架中显示菜单页面</a></p>
+
+<!-- 在 HTML 中不能使用小于号（<）和大于号（>），这是因为浏览器会误认为它们是标签。-->
+<p>如果需要显示小于号和大于号，可以使用 HTML 实体：&lt; 和 &gt;。</p>
+<!-- 浏览器总是会截短 HTML 页面中的空格。 -->
+<!-- 如果您在文本中写10个空格，在显示该页面之前，浏览器会删除它们中的9个。-->
+<p>如果需要显示多个空格，可以使用 HTML 实体：&nbsp; &nbsp; &nbsp;。</p>
 
 </body>
 </html>
